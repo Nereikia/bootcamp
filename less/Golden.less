@@ -56,7 +56,16 @@ table {
 	font-style: normal;
 }
 
-
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../icomoon/fonts/icomoon.eot?5ceyk0');
+  src:  url('../icomoon/fonts/icomoon.eot?5ceyk0#iefix') format('embedded-opentype'),
+    url('../icomoon/fonts/icomoon.ttf?5ceyk0') format('truetype'),
+    url('../icomoon/fonts/icomoon.woff?5ceyk0') format('woff'),
+    url('../icomoon/fonts/icomoon.svg?5ceyk0#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 
 .header {
@@ -81,8 +90,10 @@ table {
     justify-content: flex-end;
     list-style-type: none;
     flex-wrap: nowrap;
-    }
-
+    
+        }
+        
+    
         
     .first-header-line {
     
@@ -217,6 +228,7 @@ li {
     background-color:#f7f7f7;
     width: 100%;
     margin: 0 auto;
+    padding-bottom:120px;
     >h2{
         font-family: 'montserrat';
         font-weight: 700;
@@ -262,7 +274,8 @@ li {
                 font-family: 'droid serif';
                 font-size: 14px;
                 color:#868686;
-                padding:7px;
+                padding-bottom: 30px;
+            padding-top: 7px;
                 font-style: italic;
             }
         }
@@ -415,7 +428,7 @@ li {
     >p{
         max-width: 610px;
         padding-bottom: 123px;
-        padding-top: 50px;
+        padding-top: 20px;
         text-align: center;
         margin:0 auto;
         color:#777777;
@@ -446,7 +459,35 @@ li {
         }
         
     }
+    .social-icons{
+        display: flex;
+        justify-content: center;
+        margin: 30px auto;
+        > li {
+            a {
+              font-size: 0;
+              line-height: 0;
+              &:before {
+                font-family: "icomoon";
+                font-size: 20px;
+                color: black;
+                border: solid;
+                border-color: black;
+                border-radius: 50%;
+                padding: 10px;
+                margin:0 -5px;}
+            }
+            &.twitter a:before {
+              content: '\ea96';}
+            &.facebook a:before {
+              content: '\ea90';}
+            &.pinterest a:before {
+              content: '\e901';}
+            &.google a:before {
+              content: '\e902';}
+          }
     }
+
     .team-icons1{
         background-color: #fff;
         justify-content: center;
@@ -457,6 +498,10 @@ li {
             padding:20px;
         }
     }
+}
+    
+    
+
 
 #contact{
     background-repeat: no-repeat;
@@ -498,30 +543,34 @@ li {
     justify-content: center;
     flex-wrap: wrap;
     .input1{
-        >h4{
+        >input{
+        font-family: "montserrat";
         background-color: #fff;
-        color:#777777;
-        font-size:14px;
+        color:#bbb;
+        font-size:16px;
+        font-weight: 700;
         padding:20px 300px 25px 25px;
-        margin:25px 30px;
-            border-radius: 5px;
-            text-transform: uppercase;
+        margin:20px 15px;
+        border-radius: 5px;
+        text-transform: uppercase;
             }
             }
     .input2{
-        >h4{
+        >input{
+            font-family: "montserrat";
         background-color: #fff;
-        color:#777777;
-        font-size:14px;
-        padding:20px 250px 200px 25px;
-            margin:25px auto;
+        color:#bbb;
+        font-size:16px;
+            font-weight: 700;
+        padding:20px 300px 245px 25px;
+            margin:20px 15px;
             border-radius: 5px;
             text-transform: uppercase;
         }
 }
 }
 .send{
-    a{  font-family: 'montserrat';
+    >input{  font-family: 'montserrat';
         font-weight: 700;
         font-size: 18px;
         text-transform: uppercase;
@@ -536,13 +585,49 @@ li {
 }
 }
 footer{
-    color:#777777;
+    font-family: 'montserrat';
+    color:#555555;
     max-width:940px;
     font-size: 14px;
-    text-align: center;
-    margin-bottom: 46px;
-    margin-top: 36px;
-}
+    margin: 46px auto 36px;
+        
+    
+    .social-icons2{
+        display: flex;
+        justify-content: center;
+        transform: translateY(-100%);
+        > li {
+            a {
+              font-size: 0;
+              line-height: 0;
+              &:before {
+                font-family: "icomoon";
+                font-size: 20px;
+                color: white;
+                background-color: #000;
+                border-radius: 50%;
+                padding: 10px;}
+            }
+            &.twitter a:before {
+              content: '\ea96';}
+            &.facebook a:before {
+              content: '\ea90';}
+            &.pinterest a:before {
+              content: '\e901';}
+            &.google a:before {
+              content: '\e902';}
+          }
+        }
+      }
+    
+  
+        
+    
+
+      
+    
+  
+
 
         
         
